@@ -1,0 +1,27 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+  <servlet>
+        <servlet-name>register</servlet-name>
+        <servlet-class>com.otp.controller.RegisterServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>register</servlet-name>
+        <url-pattern>/register</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>otp</servlet-name>
+        <servlet-class>com.otp.controller.OtpServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>otp</servlet-name>
+        <url-pattern>/verifyOtp</url-pattern>
+    </servlet-mapping>
+
+  <display-name>Archetype Created Web Application</display-name>
+</web-app>
